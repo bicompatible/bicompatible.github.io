@@ -1,0 +1,63 @@
+/*
+ * Base structure
+ */
+
+body {
+  background-color: #00A8E8;
+  background-color: #FFEE93;
+  background-color: #44FFD2;
+  background-color: #170A1C;
+  background-attachment: fixed;
+  background-position: 25% 50%;
+  background-repeat: repeat-y;
+  background-size: 40rem auto;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+body:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url('../img/cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.h1, h1 {
+  font-size: calc(1rem + 1.5vw);
+}
+
+strong {
+  font-weight: 600;
+}
+
+h1 img {
+  filter: invert(1);
+  max-width: 50%;
+}
+
+.lead {
+  font-size: 2rem;
+}
+
+@media (max-width: 425px) {
+  .lead {
+    font-size: 1.25rem;
+  } 
+}
